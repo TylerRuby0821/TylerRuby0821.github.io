@@ -1665,3 +1665,35 @@ input, select, textarea {
 			width: 5.4rem;
 			border-radius: 50%;
 		}
+
+		.project__title{
+			font-size: 22px;
+			font-weight: 700;
+		}
+
+		.project__links--container{
+			display: flex;
+			justify-content: flex-end;
+			/* align-items: flex-end; */
+
+		}
+
+		.project__links--link{
+			text-decoration: none;
+			cursor: pointer;
+			background-color: #636668;
+			border-radius: 7%;
+			margin: 5px;
+			padding: 6px;
+		}
+
+		.skills__lists--container{
+			/* display: inline;
+			float: left; */
+		}
+
+		.skills__lists--list{
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+		}
