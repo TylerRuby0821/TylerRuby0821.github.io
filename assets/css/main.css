@@ -1687,10 +1687,10 @@ input, select, textarea {
 			padding: 6px;
 		}
 
-		.skills__lists--container{
+		/* .skills__lists--container{ */
 			/* display: inline;
 			float: left; */
-		}
+		/* } */
 
 		.skills__lists--list{
 			display: flex;
