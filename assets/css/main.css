@@ -177,7 +177,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2rem 0;
+		/* margin: 0 0 2rem 0; */
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1705,14 +1705,47 @@ input, select, textarea {
 		}
 
 		.skills__lists--container{
-			display: flex;
+			/* display: flex;
 			flex-wrap: wrap;
 			text-align: center;
-			justify-content: center;
-			align-items: center;
+			justify-content: space-around;
+			align-items: center; */
+		display: grid;
+  	grid-template-columns: 1fr 1fr 1fr 1fr;
+  	grid-template-rows: 1fr 1fr 1fr 1fr;
+  	gap: 4px 4px;
+  	grid-template-areas:
+			"JS React Redux Node"
+			"Python Flask SQLA SQL"
+			"Git Github HTML CSS"
+			"Express Sequelize Heroku NPM";
+		text-align: center;
 
 		}
 
+		.JS { grid-area: JS; }
+		.React { grid-area: React; }
+		.Redux { grid-area: Redux; }
+		.Node { grid-area: Node; }
+		.Python { grid-area: Python; }
+		.Flask { grid-area: Flask; }
+		.SQLA { grid-area: SQLA; }
+		.SQL { grid-area: SQL; }
+		.Express { grid-area: Express; }
+		.NPM { grid-area: NPM; }
+		.Git { grid-area: Git; }
+		.Github { grid-area: Github; }
+		.HTML { grid-area: HTML; }
+		.CSS { grid-area: CSS; }
+		.Sequelize { grid-area: Sequelize; }
+		.Heroku { grid-area: Heroku; }
+
 		.skill{
-			padding: 10px 10px 10px 10px;
+			padding: 20px 10px 10px 10px;
+			border: 1px solid whitesmoke;
+
+		}
+
+		.skills_header{
+			margin: 0 0  1rem 0;
 		}
